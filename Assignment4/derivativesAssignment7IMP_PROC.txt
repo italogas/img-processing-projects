@@ -1,0 +1,110 @@
+
+Italo Guedes Almeida Silva 0998592 - Assignment #7
+
+( x1- (ax2+by2+t1) )**2 + ( y1 - (-bx2 + ay2 + t2) )**2
+
+( x1-ax2-by2-t1 )**2 + ( y1+bx2-ay2-t2) )**2
+
+u=x1-ax2-by2-t1 
+
+df(u)/da = df/du * du/da
+
+df/du = 2u
+du/da = (0-x2-0-0) = -x2
+
+-2x2(x1-ax2-by2-t1) 
+
+ ---------
+
+for b:
+
+( x1-ax2-by2-t1 )**2 + ( y1+bx2-ay2-t2)**2
+
+u=x1-ax2-by2-t1 
+
+df(u)/db = df/du * du/db
+
+df/du = 2u
+du/db = (0-0-y2-0) = -y2
+
+-2y2(x1-ax2-by2-t1) 
+
+-
+
+u=y1+bx2-ay2-t2 
+
+df(u)/db = df/du * du/db
+
+df/du = 2u
+du/db = (0+x2-0-0) = x2
+
+2x2(y1+bx2-ay2-t2) 
+
+-2y2(x1-ax2-by2-t1) + 2x2(y1+bx2-ay2-t2) = 0
+-2y2x1 + 2ax2y2 + 2by2**2 + 2y2t1 + 2x2y1 - 2bx2**2 - 2ax2y2 - 2x2t2 = 0
+0a + (2x2**2 - 2y2**2)b + 2y2t1 - 2x2t2 = - 2x2y1 + 2y2x1 
+
+ ---------
+
+for t1:
+
+( x1-ax2-by2-t1 )**2 + ( y1+bx2-ay2-t2)**2
+
+u=x1-ax2-by2-t1 
+
+df(u)/dt1 = df/du * du/dt1
+
+df/du = 2u
+du/dt1 = (0-0-0-1) = -1
+
+-2(x1-ax2-by2-t1) 
+
+-
+
+u=y1+bx2-ay2-t2 
+
+df(u)/dt1 = df/du * du/dt1
+
+df/du = 2u
+du/dt1 = (0+0-0-0) = 0
+
+2*0*(y1+bx2-ay2-t2) = 0
+
+-2(x1-ax2-by2-t1) + 0 = 0
+-2x1 + 2ax2 + 2by2 + 2t1 = 0
+(2x2)a + (2y2)b + 2t1 -  0 t2 = 2x1 
+
+ ---------
+
+for t2:
+
+( x1-ax2-by2-t1 )**2 + ( y1+bx2-ay2-t2)**2
+
+u=x1-ax2-by2-t1 
+
+df(u)/dt2 = df/du * du/dt2
+
+df/du = 2u
+du/dt2 = (0-0-0-0) = 0
+
+2*0*(x1-ax2-by2-t1) = 0
+
+-
+
+u=y1+bx2-ay2-t2 
+
+df(u)/dt2 = df/du * du/dt2
+
+df/du = 2u
+du/dt2 = (0+0-0-1) = -1
+
+-2(y1+bx2-ay2-t2) = 0
+
+0 - 2(y1+bx2-ay2-t2) = 0
+-2y1 - 2bx2 + 2ay2 + 2t2 = 0
+(2y2)a + (2x2)b + 0 t1 +  2 t2 = 2y1 
+
+
+
+
+

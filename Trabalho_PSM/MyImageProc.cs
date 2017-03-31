@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 
 
-namespace ImageProcesing2010
+namespace ProjetoPSM
 {
     /// <summary>
     /// Summary description for MyImageProc.

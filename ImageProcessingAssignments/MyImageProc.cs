@@ -6,7 +6,7 @@ using System.Drawing.Imaging;
 using System.Windows.Forms;
 
 
-namespace ImageProcesing2010
+namespace ProjetoPSM
 {
     /// <summary>
     /// Summary description for MyImageProc.

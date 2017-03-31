@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProjetoPSM.Properties
+namespace Trabalho4_PSM.Properties
 {
 
 

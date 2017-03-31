@@ -1,4 +1,4 @@
-﻿using ImageProcesing2010;
+﻿using ProjetoPSM;
 using System;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -50,19 +50,20 @@ namespace ImageProcessingAssignments
             //  -1  0  1
             //  -2  0  2
             //  -1  0  1
-            kernel[0][0] = -1.0;
-            kernel[0][1] = -1.0;
-            kernel[0][2] = -1.0;
-            kernel[1][0] = -1.0;
-            kernel[1][1] = 8;
-            kernel[1][2] = -1.0;
-            kernel[2][0] = -1.0;
-            kernel[2][1] = -1.0;
-            kernel[2][2] = -1.0;
+            //Gaussiano 3x3
+            kernel[0][0] = 1.0;
+            kernel[0][1] = 2.0;
+            kernel[0][2] = 1.0;
+            kernel[1][0] = 2.0;
+            kernel[1][1] = 4;
+            kernel[1][2] = 2.0;
+            kernel[2][0] = 1.0;
+            kernel[2][1] = 2.0;
+            kernel[2][2] = 1.0;
 
             Image img = this.picOrigImage.Image;
             Bitmap bmp = new Bitmap(img);
-            MyImageProc.CovertToGray(bmp);
+            //MyImageProc.CovertToGray(bmp);
             //MyImageProc.GaussianFilter(bmp);
             if (MyImageProc.Convolve(bmp, kernel))
             {
